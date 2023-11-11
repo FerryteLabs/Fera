@@ -1,4 +1,5 @@
 import os
+import backend
 
-def init() :
-    os.system("lsblk")
+def refresh() :
+    print("Polling Fera Backend from server : " + FeraServerAddress)
