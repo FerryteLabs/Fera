@@ -9,4 +9,5 @@ def IsUpdateAvailable(argc, argv) :
     
 
 def refresh():
-    IsUpdateAvailable(CurrentVersion, CurrentServerVersion)
+    print("everything")
+    #IsUpdateAvailable(CurrentVersion, CurrentServerVersion)
