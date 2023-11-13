@@ -20,6 +20,8 @@
                     border-bottom: 16px solid rgb(94, 0, 181);
                     -webkit-animation: spin 2s linear infinite;
                     animation: spin 2s linear infinite;
+                    width: 100px;
+                    height: 100px;
                 }
 
                 @-webkit-keyframes spin {
@@ -51,19 +53,31 @@
                     to{ bottom:0; opacity:1 }
                 }
 
-                #myDiv {
-                    display: none;
-                    text-align: center;
+                #page {
+                    display: none
                 }
+
+                #title {
+                    text-align: center
+                }
+
             </style>
     </head>
     <body onload="myFunction()" style="margin:0;">
 
         <div id="loader"></div>
 
-            <div style="display:none;" id="myDiv" class="animate-bottom">
-                <h2>Tada!</h2>
-                <p>Some text in my newly loaded page..</p>
+            <div style="display:none;" id="page" class="animate-bottom">
+
+                <div id="title" class="animate-bottom">
+                    <img src="../img/lt-small-transparent.png" alt="" style="max-width: 10%; height: auto; width: auto; margin:10px" >
+                    <br></br>
+                    <img src="../img/preview.png" alt="" style="max-width: 20%; height: auto; width: auto;">
+                </div>
+
+                <div id="content" style="margin: 10px">
+                    <p style="font-family: Arial;" text-align="left" >Welcome to Fera.</p>
+                </div>
             </div>
 
         <script>
@@ -75,7 +89,7 @@
 
             function showPage() {
                 document.getElementById("loader").style.display = "none";
-                document.getElementById("myDiv").style.display = "block";
+                document.getElementById("page").style.display = "block";
             }
         </script>
 
